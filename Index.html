@@ -9,16 +9,18 @@
     <title>Tools Website - Home</title>
     <style>
         /* CSS Reset */
-        .tool-card a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.tool-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
 
         /* Header and Navigation */
         header {
@@ -94,236 +96,26 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             text-align: center;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .tool-card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
 
-        .tool-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        .tool-card h3 {
-            font-size: 1.25rem;
-            margin: 20px 0 10px;
-            color: #6200ea;
-        }
-
-        .tool-card p {
-            font-size: 0.9rem;
-            padding: 0 20px 20px;
-            color: #666;
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .tools-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">Tools Website</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Image Tools</a></li>
-                <li><a href="#">PDF Tools</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Your One-Stop Solution for Image and PDF Tools</h1>
-        <p>Compress, convert, and optimize your files effortlessly with our powerful online tools.</p>
-    </section>
-
-    <!-- Tools Grid -->
-    <section class="tools-grid">
-    <section class="tools-grid">
-    <div class="tool-card">
-        <a href="Tool/Img-compress.html" style="text-decoration: none; color: inherit;">
-            <img src="https://via.placeholder.com/300x150" alt="Image Compressor">
-            <h3>Image Compressor</h3>
-            <p>Reduce the size of your images without losing quality.</p>
-        </a>
-    </div>
-    <div class="tool-card">
-        <a href="pdf-compressor.html" style="text-decoration: none; color: inherit;">
-            <img src="https://via.placeholder.com/300x150" alt="PDF Compressor">
-            <h3>PDF Compressor</h3>
-            <p>Optimize your PDF files for smaller sizes.</p>
-        </a>
-    </div>
-    <div class="tool-card">
-        <a href="image-converter.html" style="text-decoration: none; color: inherit;">
-            <img src="https://via.placeholder.com/300x150" alt="Image Converter">
-            <h3>Image Converter</h3>
-            <p>Convert images to different formats like JPG, PNG, and more.</p>
-        </a>
-    </div>
-    <div class="tool-card">
-        <a href="pdf-to-word.html" style="text-decoration: none; color: inherit;">
-            <img src="https://via.placeholder.com/300x150" alt="PDF to Word">
-            <h3>PDF to Word</h3>
-            <p>Convert PDF files to editable Word documents.</p>
-        </a>
-    </div>
-    <div class="tool-card">
-        <a href="image-resizer.html" style="text-decoration: none; color: inherit;">
-            <img src="https://via.placeholder.com/300x150" alt="Image Resizer">
-            <h3>Image Resizer</h3>
-            <p>Resize images to your desired dimensions.</p>
-        </a>
-    </div>
-    <div class="tool-card">
-        <a href="pdf-merger.html" style="text-decoration: none; color: inherit;">
-            <img src="https://via.placeholder.com/300x150" alt="PDF Merger">
-            <h3>PDF Merger</h3>
-            <p>Combine multiple PDF files into one.</p>
-        </a><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your one-stop solution for image and PDF tools. Compress, convert, and optimize files effortlessly.">
-    <meta name="keywords" content="image tools, PDF tools, compress images, optimize PDF, online tools">
-    <meta name="author" content="Your Name">
-    <title>Tools Website - Home</title>
-    <style>
-        /* CSS Reset */
         .tool-card a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.tool-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-        /* Header and Navigation */
-        header {
-            background-color: #6200ea;
-            color: #fff;
-            padding: 20px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        nav .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
+            display: block;
             text-decoration: none;
-            font-size: 1rem;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #bb86fc;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: #6200ea;
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Tools Grid */
-        .tools-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .tool-card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .tool-card:hover {
-            transform: translateY(-10px);
+            color: inherit;
+            padding: 20px;
         }
 
         .tool-card img {
             width: 100%;
             height: 150px;
             object-fit: cover;
+            border-radius: 10px 10px 0 0;
         }
 
         .tool-card h3 {
@@ -334,7 +126,6 @@
 
         .tool-card p {
             font-size: 0.9rem;
-            padding: 0 20px 20px;
             color: #666;
         }
 
@@ -395,60 +186,49 @@
 
     <!-- Tools Grid -->
     <section class="tools-grid">
-    <section class="tools-grid">
-    <div class="tool-card">
-        <a href="Tool/Img-compress.html" style="text-decoration: none; color: inherit;">
-            <img src="https://via.placeholder.com/300x150" alt="Image Compressor">
-            <h3>Image Compressor</h3>
-            <p>Reduce the size of your images without losing quality.</p>
-        </a>
-    </div>
-    <div class="tool-card">
-        <a href="pdf-compressor.html" style="text-decoration: none; color: inherit;">
-            <img src="https://via.placeholder.com/300x150" alt="PDF Compressor">
-            <h3>PDF Compressor</h3>
-            <p>Optimize your PDF files for smaller sizes.</p>
-        </a>
-    </div>
-    <div class="tool-card">
-        <a href="image-converter.html" style="text-decoration: none; color: inherit;">
-            <img src="https://via.placeholder.com/300x150" alt="Image Converter">
-            <h3>Image Converter</h3>
-            <p>Convert images to different formats like JPG, PNG, and more.</p>
-        </a>
-    </div>
-    <div class="tool-card">
-        <a href="pdf-to-word.html" style="text-decoration: none; color: inherit;">
-            <img src="https://via.placeholder.com/300x150" alt="PDF to Word">
-            <h3>PDF to Word</h3>
-            <p>Convert PDF files to editable Word documents.</p>
-        </a>
-    </div>
-    <div class="tool-card">
-        <a href="image-resizer.html" style="text-decoration: none; color: inherit;">
-            <img src="https://via.placeholder.com/300x150" alt="Image Resizer">
-            <h3>Image Resizer</h3>
-            <p>Resize images to your desired dimensions.</p>
-        </a>
-    </div>
-    <div class="tool-card">
-        <a href="pdf-merger.html" style="text-decoration: none; color: inherit;">
-            <img src="https://via.placeholder.com/300x150" alt="PDF Merger">
-            <h3>PDF Merger</h3>
-            <p>Combine multiple PDF files into one.</p>
-        </a>
-    </div>
-</section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 Tools Website. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-
-    </div>
-</section>
+        <div class="tool-card">
+            <a href="image-compressor.html">
+                <img src="https://via.placeholder.com/300x150" alt="Image Compressor">
+                <h3>Image Compressor</h3>
+                <p>Reduce the size of your images without losing quality.</p>
+            </a>
+        </div>
+        <div class="tool-card">
+            <a href="pdf-compressor.html">
+                <img src="https://via.placeholder.com/300x150" alt="PDF Compressor">
+                <h3>PDF Compressor</h3>
+                <p>Optimize your PDF files for smaller sizes.</p>
+            </a>
+        </div>
+        <div class="tool-card">
+            <a href="image-converter.html">
+                <img src="https://via.placeholder.com/300x150" alt="Image Converter">
+                <h3>Image Converter</h3>
+                <p>Convert images to different formats like JPG, PNG, and more.</p>
+            </a>
+        </div>
+        <div class="tool-card">
+            <a href="pdf-to-word.html">
+                <img src="https://via.placeholder.com/300x150" alt="PDF to Word">
+                <h3>PDF to Word</h3>
+                <p>Convert PDF files to editable Word documents.</p>
+            </a>
+        </div>
+        <div class="tool-card">
+            <a href="image-resizer.html">
+                <img src="https://via.placeholder.com/300x150" alt="Image Resizer">
+                <h3>Image Resizer</h3>
+                <p>Resize images to your desired dimensions.</p>
+            </a>
+        </div>
+        <div class="tool-card">
+            <a href="pdf-merger.html">
+                <img src="https://via.placeholder.com/300x150" alt="PDF Merger">
+                <h3>PDF Merger</h3>
+                <p>Combine multiple PDF files into one.</p>
+            </a>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
